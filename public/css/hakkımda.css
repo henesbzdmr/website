@@ -1,0 +1,81 @@
+.hakkimda{
+    padding: 0px 20px;
+}
+
+.hakkimda .wrapper{
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1366px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    display: flex;
+}
+.hakkimda .wrapper:nth-child(2n){
+flex-direction: row-reverse;
+}
+
+.hakkimda .wrapper .text{
+    flex: 1;   
+    padding: 5px; 
+}
+.hakkimda .wrapper .text h1{
+    font-family: "Dancing Script", cursive;
+}
+.hakkimda .wrapper .text p{
+    font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.3rem;
+        padding: 10px;
+        line-height: 25px;
+}
+.hakkimda .wrapper .text p::first-letter{
+    margin-left: 20px;
+}
+.hakkimda .wrapper .foto{
+    flex: 1;    
+    overflow: hidden;
+    border-radius: 10px;
+}
+.hakkimda .wrapper .foto img{
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.hakkimda .wrapper .foto img:hover{    
+    transform: scale(1.2);
+}
+
+/* Scroll Animation */
+
+
+.hakkimda .wrapper{
+    opacity: 0;
+    transition: all 0.8s;
+}
+.hakkimda .wrapper.active{
+    opacity: 1;
+}
+.hakkimda .wrapper .text{
+    transform: translateX(-25px);
+    transition: all 0.5s;
+}
+.hakkimda .wrapper:nth-child(2n) .text{
+    transform: translateX(25px);
+}
+.hakkimda .wrapper.active .text{
+    transform: translateX(0px);
+}
+.hakkimda .wrapper .foto{
+    transform: translateX(25px);
+    transition: all 0.5s;
+}
+.hakkimda .wrapper:nth-child(2n) .foto{
+    transform: translateX(-25px);
+}
+.hakkimda .wrapper.active .foto{
+    transform: translateX(0px);
+}
+
+
+
+
