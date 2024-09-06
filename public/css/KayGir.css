@@ -72,3 +72,43 @@
         border-radius: 10px;
         border: none;
     }
+    /* Responsive Design */
+@media (max-width: 768px) {
+    .KayGir form {
+        top: 50px;
+        left: 5%;
+        width: 90%;
+        padding: 15px;
+    }
+
+    .KayGir form .formGrup input {
+        height: 35px;
+    }
+
+    .KayGir form .btnGrup {
+        justify-content: center;
+    }
+
+    .KayGir form .btnGrup a,
+    .KayGir form .btnGrup button {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .KayGir form {
+        top: 30px;
+        padding: 10px;
+    }
+
+    .KayGir form .formGrup input {
+        height: 30px;
+    }
+
+    .KayGir form .btnGrup a,
+    .KayGir form .btnGrup button {
+        font-size: 0.9rem;
+    }
+}

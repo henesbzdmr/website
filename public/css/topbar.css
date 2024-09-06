@@ -121,3 +121,58 @@ opacity: 0;
     color: goldenrod;
     border-radius: 10px;
 }
+/* Responsive Design */
+@media(max-width: 1100px) {
+    .topbar .left, .topbar .center, .topbar .right {
+        justify-content: flex-start;
+    }
+
+    .topbar .right .searchEngine {
+        width: 60%; /* Reduce width of search engine */
+    }
+
+    .topbar .center {
+        flex: 5; /* Adjust flex for better alignment */
+    }
+}
+
+@media(max-width: 768px) {
+    .topbar .wrapper {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .topbar .left, .topbar .center, .topbar .right {
+        width: 100%;
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+    .topbar .right .searchEngine {
+        width: 80%;
+    }
+
+    .topbar .right span img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media(max-width: 480px) {
+    .topbar .wrapper {
+        padding: 0 10px;
+    }
+
+    .topbar .left i, .topbar .center a {
+        font-size: 1rem; /* Adjust font size for small screens */
+    }
+
+    .topbar .right .searchEngine {
+        width: 90%;
+    }
+
+    .topbar .right span img {
+        width: 30px;
+        height: 30px;
+    }
+}
